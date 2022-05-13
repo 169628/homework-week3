@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "27b3471d-b647-4618-8811-7f30cf8492c4",
+		"name": "postman-express-posts-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fathomless-shelf-39990.herokuapp.com/posts/",
+					"protocol": "https",
+					"host": [
+						"fathomless-shelf-39990",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"皮皮qq\",\n    \"tags\": \"測試\",\n    \"type\": \"person\",\n    \"image\": \"https://i.imgur.com/vMMdWt5.jpg\",\n    \"content\": \"測試\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fathomless-shelf-39990.herokuapp.com/posts/",
+					"protocol": "https",
+					"host": [
+						"fathomless-shelf-39990",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"6276735b92290c48b74b95a8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fathomless-shelf-39990.herokuapp.com/posts/",
+					"protocol": "https",
+					"host": [
+						"fathomless-shelf-39990",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改post",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"627916587e8b4d0ca8a7e98c\",\n    \"content\": \"耶耶耶\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fathomless-shelf-39990.herokuapp.com/posts/",
+					"protocol": "https",
+					"host": [
+						"fathomless-shelf-39990",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
